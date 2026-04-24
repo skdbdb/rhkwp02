@@ -134,6 +134,14 @@ $(function () {
             }
 
             initSwiper();
+
+            setTimeout(() => {
+                $('.main_project .swiper-slide').each(function (i) {
+                    setTimeout(() => {
+                        $(this).addClass('show');
+                    }, i * 100);
+                });
+            }, 50);
         }
 
         // 초기
